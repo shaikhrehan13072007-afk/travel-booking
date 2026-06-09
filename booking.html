@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Tours & Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo2.png">
+</head>
+<body>
+    <header>
+        <marquee behavior="scroll" direction="left" scrollamount="5">Welcome to Shree Ganesh Tours & Travels - Your Gateway to Unforgettable Journeys!</marquee>
+        <div class="heading"> Shree Ganesh Tours & Travels
+        <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+    </header>
+
+    <h1 style="background-color: black; color: skyblue; padding: 10px; border-radius: 5px; border: 2px solid skyblue; text-align: center;">
+        Welcome to our booking page! 
+    </h1>
+    <h3 style="text-align: center; background: white;">
+        We are excited to help you plan your next adventure with Shree Ganesh Tours & Travels. Please fill out the form below to book your travel with us. We look forward to providing you with an unforgettable travel experience!
+    </h3>
+
+     <div class="booking-form">
+    <form onsubmit="gonext(event)">
+    <section id="booking">
+        <h1>Booking</h1>
+        <p>Book your travel with us! Please fill out the form below to make a reservation.</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="pickup">Pickup Location:</label>
+        <input type="text" id="pickup" name="pickup" required><br><br>
+        
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+
+        <label for="km">Distance (in km):</label>
+        <input type="number" id="km" name="km" required placeholder="Enter distance in kilometers"><br><br>
+        
+        <label for="startdate">Travel start Date:</label>
+        <input type="date" id="startdate" name="startdate" required><br><br>
+
+        <label for="enddate">Travel end Date:</label>
+        <input type="date" id="enddate" name="enddate" required><br><br>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" required><br><br>
+
+        <label for="cars">Type of Car:</label>
+        <select id="cars" name="cars" required>
+            <option value="Swift Dzire">Swift Dzire</option>
+            <option value="Suzuki Ertiga">Suzuki Ertiga</option>
+            <option value="Toyota Innova">Toyota Innova</option>
+            <option value="Toyota Cresta">Toyota Cresta</option>
+            <option value="Traveller">Traveller</option>
+            <option value="32-Seater Bus">32-Seater Bus</option>
+            <option value="45-Seater Bus">45-Seater Bus</option>
+            <option value="50-Seater Bus">50-Seater Bus</option>
+        </select><br><br>
+        
+        <button type="submit" value="Book Now">Book Now</button>
+        <br>
+        <p>Are you sended the information to us?</p>
+        <button onclick="window.location.href='thanking.html'">
+            Yes
+        </button>
+        <button  onclick="alert('please send the information to us')" onclick="window.location.href='booking.html'">
+            No
+        </button>
+    </form>
+    </div>
+
+    <script>
+        function gonext(e){
+            e.preventDefault(); // Prevent the form from submitting
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let pickup = document.getElementById('pickup').value;
+            let destination = document.getElementById('destination').value;
+            let km = document.getElementById('km').value;
+            let startdate = document.getElementById('startdate').value;
+            let enddate = document.getElementById('enddate').value;
+            let guests = document.getElementById('guests').value;
+            let cars = document.getElementById('cars').value;
+
+            let meassage = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPickup Location: ${pickup}\nDestination: ${destination}\nDistance (km): ${km}\nTravel Start Date: ${startdate}\nTravel End Date: ${enddate}\nNumber of Guests: ${guests}\nType of Car: ${cars}`;
+            window.open('https://wa.me/9763426161?text=' + encodeURIComponent(meassage));
+            
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Shree Ganesh Tours & Travels. All rights reserved.</p>
+    </footer>
+</body>
+</html>

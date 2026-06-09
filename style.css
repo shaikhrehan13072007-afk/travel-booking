@@ -1,0 +1,353 @@
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        flex-direction: none;
+    }
+
+
+.hero{
+    font-size: 24px;
+}
+}
+
+
+
+.heading{
+    width: 91.66666667%;
+    background: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 1000;
+    color: white;
+    height: 20px;
+
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+body{
+    background-color: #f0f0f0;
+background-size: 1400px 750px;
+color: black;
+}
+
+#home{
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-page {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.contact-headings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto 40px;
+    max-width: 1320px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+.contact-heading h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+#thankyou{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: black;
+}
+
+
+#tourlogo{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 100px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+footer{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.prices1{
+    height : 650px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices2{
+    height : 650px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices3{
+    height : 650px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices4{
+    height : 650px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+
+}
+
+.prices5{
+    height : 750px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices6{
+    height : 700px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices7{
+    height : 700px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices8{
+    height : 700px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.prices1, .prices2, .prices3 , .prices4, .prices5, .prices6, .prices7, .prices8 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ourcabs{
+    background-color: black;
+    color: skyblue;
+    text-align: center;
+    padding: 0;
+    height:60px;
+    width: 100%;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+}
+
+button{
+    background-color:violet;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: purple;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#services{
+    background-color: black;
+    color: skyblue;
+    text-align: center;
+    padding: 0;
+    height:60px;
+    width: 100%;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+}
+
+.gujrat{
+    height : 400px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.airport{
+    height : 400px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.nashik{
+    height : 400px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.goa{
+    height : 400px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.pune{
+    height : 380px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.konkan{
+    height : 380px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.mahabaleshwar{
+    height : 380px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.maharashtra{
+    height : 400px;
+    width : 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    color  : black;
+    margin-top: 20px;
+}
+
+.mumbai, .pune, .nashik, .konkan, .mahabaleshwar, .maharashtra, .gujrat, .airport, .goa {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    #hed {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  #hed {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
